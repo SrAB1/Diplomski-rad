@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Babić Aleksandar">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cambridge Centar Bileća</title>
+
+    <!--Razne JavaScript Biblioteke/Frameworci/Direktive-->
+    <script src="JS/jquery-3.1.1.min.js"></script>
+    <script src="JS/angular.js"></script>
+    <script src="JS/aplikacija.js"></script>
+    <script src="JS/angular-resource.js"></script>
+    <script src="JS/angular-mocks.js"></script>
+    <script src="JS/angular-ui-router.js"></script>
+    <script src="JS/angular-messages.min.js"></script>
+    <script src="JS/ui-utils.js"></script>
+    <script src="JS/ui-bootstrap-tpls-0.11.0.js"></script>
+    <script src="JS/toastr.js"></script>
+    <script src="https://maps.google.com/maps/api/js?libraries=placeses,visualization,drawing,geometry,places"></script>    
+    <script src="JS/ng-map.js"></script>
+   
+
+
+
+    <!-- Bootstrap  -->
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" type="text/css">
+   
+    <!-- CSS Stil, Toaster Stil -->
+    <link rel="stylesheet" href="CSS/cambridge.css">
+    <link rel="stylesheet" href="CSS/toastr.css">
+
+    <!-- Fontovi -->
+	<link href="CSS/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+    
+    <!-- Servisi -->
+    <script src="OPSTI/SERVISI/opsti.servisi.js"></script>
+    <script src="OPSTI/SERVISI/knjigeResursi.js"></script>
+    <script src="OPSTI/SERVISI/knjigeResursiMock.js"></script>
+   
+    <!-- Ikona/Logo -->
+    <link rel="icon" href="IMAGES/favicon.ico" type="image/x-icon">
+</head>
+
+<body ng-app="cambridgeCentarBileca">
+<nav class="glavniMeni">
+    <div class="container">
+        <div class="dropdown">
+            <button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <li><a ui-sref="home">Pocetna</a></li>
+                    <li><a ui-sref="kursevi">Kursevi</a></li>
+                    <li><a ui-sref="knjigeEng">Knjige Engleski</a></li>
+                    <li><a ui-sref="knjigeNem">Knjige Nemacki</a>   
+                    <li><a ui-sref="kontakt">Kontaktirajte nas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+ 
+    <div ui-view> </div>
+
+
+   
+<!-- Bootstrap Javascript, Navigacija JavaScript, Jquery -->
+<script src="JS/bootstrap.min.js"></script>
+<script src="JS/app.js"></script>
+</body>
+<!-- Copyright -->
+<div class="footer-copyright text-center text-black-50 py-3">© 2019 Copyright: Babić Aleksandar
+  </div>
+
+</html>

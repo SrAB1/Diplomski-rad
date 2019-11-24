@@ -1,0 +1,157 @@
+[{
+        "knjigaId": 1,
+        "knjigaIme": "Advanced 1",
+        "knjigaKod": "GDN-0001",
+        "datumIzdavanja": "Oktobar 12, 2015",
+        "cena": 45.45,
+        "kategorija": " jezik",
+        "tagovi": "CAE, testovi",
+        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Advanced1.jpg"
+
+
+    },
+    {
+
+        "knjigaId": 2,
+        "knjigaIme": "Advanced 3",
+        "knjigaKod": "GDN-0002",
+        "datumIzdavanja": "Mart 19, 2017",
+        "cena": 25.55,
+        "kategorija": "Engleski jezik",
+        "tagovi": "CAE, testovi sa odgovorima",
+        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Advanced3.jpg"
+
+    },
+    {
+        "knjigaId": 3,
+        "knjigaIme": "Advanced grammar",
+        "knjigaKod": "GDN-0003",
+        "datumIzdavanja": "Januar 24, 2012",
+        "cena": 104.55,
+        "kategorija": " jezik",
+        "tagovi": "CAE, gramatika, knjiga za ucenje",
+        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Advanced-Grammar-in-Use.jpg"
+    },
+    {
+        "knjigaId": 4,
+        "knjigaIme": "Advanced English 5",
+        "knjigaKod": "GDN-0004",
+        "datumIzdavanja": "Decembar 19, 2012",
+        "cena": 12.95,
+        "kategorija": "Engleski jezik",
+        "tagovi": "CAE, knjiga za profesore ",
+        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/CAE 5(Teacher's book).jpg"
+    },
+    {
+        "knjigaId": 5,
+        "knjigaIme": "First 2",
+        "knjigaKod": "GDN-0005",
+        "datumIzdavanja": "Septembar 09, 2011",
+        "cena": 600,
+        "kategorija": "Engleski jezik",
+        "tagovi": "Starter, knjiga bez odgovora",
+        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Cambridge English First 2.jpg"
+    },
+    {
+        "knjigaId": 6,
+        "knjigaIme": "Proficiency 1",
+        "knjigaKod": "GDN-0006",
+        "datumIzdavanja": "Maj 29, 2014",
+        "cena": 70,
+        "kategorija": "Engleski jezik",
+        "tagovi": "Starter, knjiga za ucenike",
+        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Cambridge English Proficiency 1.jpg"
+    },
+    {
+        "knjigaId": 7,
+        "knjigaIme": "Proficiency 2",
+        "knjigaKod": "GDN-0004",
+        "datumIzdavanja": "Mart 19, 2009",
+        "cena": 222,
+        "kategorija": "Engleski jezik",
+        "tagovi": "Starter, testovi",
+        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Cambridge English Proficiency 2.jpg"
+    },
+    {
+        "knjigaId": 8,
+        "knjigaIme": "Vocabulary PET",
+        "knjigaKod": "GDN-0007",
+        "datumIzdavanja": "Jun 30, 2013",
+        "cena": 127.95,
+        "kategorija": "Engleski jezik",
+        "tagovi": "Starter, knjiga za ucenike",
+        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Cambridge English Vocabulary for PET.jpg"
+    },
+    {
+        "knjigaId": 9,
+        "knjigaIme": "Cambridge Global English",
+        "knjigaKod": "GDN-008",
+        "datumIzdavanja": "Mart 19, 2017",
+        "cena": 400.50,
+        "kategorija": "Engleski jezik",
+        "tagovi": "Opste, Starter, knjiga za ucenike",
+        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Cambridge_Global_English_Learners_Book_1_.jpg"
+    },
+    {
+        "knjigaId": 10,
+        "knjigaIme": "Storyfun 2",
+        "knjigaKod": "GDN-0009",
+        "datumIzdavanja": "April 20, 2019",
+        "cena": 124.95,
+        "kategorija": "Engleski jezik",
+        "tagovi": "Pocetni, knjiga za djecu",
+        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Cambridge-storyfun-2nd-edition.jpg"
+    },
+    {
+        "knjigaId": 11,
+        "knjigaIme": " English Proficiency",
+        "knjigaKod": "GDN-0010",
+        "datumIzdavanja": "May 10, 2019",
+        "cena": 462.95,
+        "kategorija": "Engleski jezik",
+        "tagovi": "Napredni, 10 testova, testovi",
+        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/cep_pract_tests.jpg"
+    },
+    {
+        "knjigaId": 12,
+        "knjigaIme": "Common mistakes",
+        "knjigaKod": "GDN-0011",
+        "datumIzdavanja": "Jul 07, 2016",
+        "cena": 127.95,
+        "kategorija": "Engleski jezik",
+        "tagovi": "Srednji, gramatika",
+        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/cpe_common_mistake.jpg"
+    },
+    {
+        "knjigaId": 13,
+        "knjigaIme": "Advanced English 5",
+        "knjigaKod": "GDN-0012",
+        "datumIzdavanja": "Jul 11, 2013",
+        "cena": 234,
+        "kategorija": "Engleski jezik",
+        "tagovi": "Napredni, Srednji, testovi",
+        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Certificate in Advanced English 5.jpg"
+    },
+    {
+        "knjigaId": 14,
+        "knjigaIme": "CPE",
+        "knjigaKod": "GDN-0013",
+        "datumIzdavanja": "Maj 25, 2017",
+        "cena": 333.23,
+        "kategorija": "Engleski jezik",
+        "tagovi": "Naprednji, knjiga za ucenike",
+        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/CPE.jpg"
+    },
+    {
+        "knjigaId": 15,
+        "knjigaIme": "Preliminary English 1",
+        "knjigaKod": "GDN-004",
+        "datumIzdavanja": "Avgust 23, 2015",
+        "cena": 600,
+        "kategorija": "Engleski jezik",
+        "tagovi": "za skole, pocetni",
+        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Preliminary English Test for schools 1.jpg"
+    }
+
+
+]
