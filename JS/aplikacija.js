@@ -101,7 +101,7 @@
 
                 
                 if(knjiga && $scope.formadodaj.$valid ){
-                knjiga.knjigaUrl="http://localhost/Diplomski-rad/IMAGES/KNJIGE/default-book.png"
+                knjiga.knjigaUrl="/Diplomski-rad/IMAGES/KNJIGE/default-book.png"
                 $scope.knjige.push(knjiga);
            toastr.success("Uspesno ste dodali knjigu!");
            $scope.knjiga = {};
@@ -388,7 +388,7 @@ else{
                 "kategorija": "Starter",
                 "trajanje": "4 mjeseca",
                 "cena": 300,
-                "imgUrl": "http://localhost/Diplomski-rad/IMAGES/slike-kursevi-diplomski/pet.jpg"
+                "imgUrl": "/Diplomski-rad/IMAGES/slike-kursevi-diplomski/pet.jpg"
             },
             {
                 "ime": "Engleski jezik(FCE)",
@@ -396,7 +396,7 @@ else{
                 "kategorija": "Srednje teski",
                 "trajanje": "6 mjeseci",
                 "cena": 500,
-                "imgUrl": "http://localhost/Diplomski-rad/IMAGES/slike-kursevi-diplomski/fce.jpg"
+                "imgUrl": "/Diplomski-rad/IMAGES/slike-kursevi-diplomski/fce.jpg"
 
             },
             {
@@ -405,7 +405,7 @@ else{
                 "kategorija": "Teski",
                 "trajanje": "8 mjeseci",
                 "cena": 600,
-                "imgUrl": "http://localhost/Diplomski-rad/IMAGES/slike-kursevi-diplomski/cae.jpg"
+                "imgUrl": "/Diplomski-rad/IMAGES/slike-kursevi-diplomski/cae.jpg"
 
             },
             {
@@ -414,7 +414,7 @@ else{
                 "kategorija": "Napredni",
                 "trajanje": "12 mjeseci",
                 "cena": 860,
-                "imgUrl": "http://localhost/Diplomski-rad/IMAGES/slike-kursevi-diplomski/CPE.jpg"
+                "imgUrl": "/Diplomski-rad/IMAGES/slike-kursevi-diplomski/CPE.jpg"
 
             },
             {
@@ -423,7 +423,7 @@ else{
                 "kategorija": "Starter",
                 "trajanje": "3 mjeseca",
                 "cena": 320,
-                "imgUrl": "http://localhost/Diplomski-rad/IMAGES/knjigeNem/A1GermanBasic.jpg"
+                "imgUrl": "/Diplomski-rad/IMAGES/knjigeNem/A1GermanBasic.jpg"
 
             },
 
@@ -433,7 +433,7 @@ else{
                 "kategorija": "Napredni",
                 "trajanje": "12 mjeseci",
                 "cena": 900,
-                "imgUrl": "http://localhost/Diplomski-rad/IMAGES/knjigeNem/B1German.jpg"
+                "imgUrl": "/Diplomski-rad/IMAGES/knjigeNem/B1German.jpg"
 
             }
             
