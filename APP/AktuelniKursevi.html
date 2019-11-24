@@ -1,0 +1,151 @@
+
+<section class="section">
+	<div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+       
+            <div class="col-sm-10 col-md-offset-1 my-form">
+                    <div class="row price-form-row">
+                    <div class="col-sm-6">
+             <div class="input-group">
+                  <span class="input-group-addon"> Pretraga:</span>  
+
+              <input class="form-control" ng-model="query[queryBy]" />
+                </div>
+                </div>
+      
+        <div class="col-sm-6">
+                <div class="input-group">
+                 <span class="input-group-addon"> Pretrazi po:</span>
+                
+                        <select class="form-control" ng-model="queryBy" ng-change="funkcija()" style="width: 100%">
+                         <option value="$"></option>
+                      <option value="ime">Ime</option>
+                        <option value="straniJezik">Strani jezik</option>
+                     <option value="kategorija">Kategorija</option>
+                           <option value="trajanje">Trajanje</option>
+                            </select>   
+            
+        </div>
+                
+</div>
+</div>
+            </div>
+
+		<h2 class="text-center title">Aktuelni kursevi</h2>
+		<p class="lead text-center">
+		    Vaze od datuma 20.01.2019.
+		</p>
+		<div class="col-sm-4 col-sm-offset-1 " ng-repeat="kurs in kursevii | filter:query | orderBy:orderProp">
+		    <div class="thumbnail">
+		        <img ng-src="{{kurs.imgUrl}}" style="width:400px; height: 200px;">
+		        <div class="caption">
+                    <h3><i class="	glyphicon glyphicon-book"></i> {{kurs.ime}}</h3>
+                    </div>
+                    <h4><i class="	glyphicon glyphicon-pencil"></i> {{kurs.straniJezik}}</h3>
+                    <h4><i class="	glyphicon glyphicon-folder-open"></i> {{kurs.kategorija}}</h3>
+                    <h4><i class="	glyphicon glyphicon-calendar"></i> {{kurs.trajanje}}</h3>
+                     <h4><i class="glyphicon glyphicon-price"></i> {{ kurs.cena | currency }}
+    
+                        <button class="btn btn-lg btn-success" style="padding: 10px; margin-left: 10px;"
+                        ng-click="prijaviSe()"> Prijava
+                </button>
+                </div>
+            </div>
+            
+
+        
+            <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                            <div class="thumbnail" style="border: 2pt solid">
+                                    <h4 class="text-center title">Prijavite se za kurseve</h4>
+                                    <p class="text-center ">Neophodno je da popunite sva polja!</p>
+                                    
+                                    <form class="form-horizontal" name="prijavaForm" novalidate>
+                    <table class="table table-bordered" style="color: black">
+                            <tr>
+                                <td>Ime</td>
+                                <td><input type='text' id='txt_fname' ng-model='fname'  required></td>
+                            </tr>
+                            <tr>
+                                <td>Prezime</td>
+                                <td><input type='text' id='txt_lname' ng-model='lname'  required></td>
+                            </tr>
+                            <tr>
+                                <td>Komentar</td>
+                                <td><textarea rows="5" id='txt_uname' ng-model='uname'   required/></td>
+                            </tr>
+                    
+                            <tr>
+                            <td>Izaberite kurs</td>
+            <td>	<select name='kursevi' id='kursevi' ng-model="kursevi" style="height: 30px" required>
+                        <option value=''>--Select--</option>
+                        <option value='Engleski jezik(Starter)'>Engleski jezik(Starter)</option>
+                        <option value='Engleski jezik(FCE)'>Engleski jezik(FCE)</option>
+                        <option value='Engleski jezik(CAE)'>Engleski jezik(CAE)</option>
+                        <option value='Engleski jezik(CPE)'>Engleski jezik(CPE)</option>
+                        <option value='Nemacki jezik(Starter)'>Nemacki jezik(Starter)</option>
+                        <option value='Nemacki jezik(Napredni)'>Nemacki jezik(Napredni)</option>
+            
+            
+                </select></td>
+            </tr>
+            <tr>
+                                    <td>Email</td>
+                                    <td><input type='email' id='txt_email' ng-model='email'  required></td>
+                                </tr>
+           
+                </table>
+                </form>
+                <div class="text-center">
+                <td><input class='btn btn-success' id='but_save' value='Sacuvaj' style="color: black ;"  ng-click="add()" " ></td>
+            </div>
+        
+            </div>
+            </div>
+            </div>
+            
+            <button class="btn-lg btn-success" ng-click="isCollapsed = !isCollapsed" style="margin-left: 40%; width: auto; margin-top: 30px;">Kliknite da pogledate Vasu prijavu</button>
+            <div collapse="isCollapsed">
+    <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                            <div class="thumbnail" style="border: 2pt solid">
+                                    <h2 class="text-center title">Vasa prijava </h2>
+                                    <form class="form-horizontal">
+                    <table class="table table-bordered"  style="color: black; table-layout: fixed; width: 100%">
+            
+            
+            <tr>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Komentar</th>
+                <th>Odabrani kurs</th>
+                <th>Vasa email adresa</th>
+
+            
+                <th>&nbsp;</th>
+            </tr>
+            
+            <tr ng-repeat="user in users">
+            <td>{{user.fname}}</td>
+            <td>{{user.lname}}</td>
+            <td >{{user.username}}</td>
+            <td>{{user.kursevi}}</td>
+            <td>{{user.email}}</td>
+
+            
+            <td><input class='btn btn-danger' ng-click='remove($index,user.id);' value='Obrisi prijavu'></td>
+            </tr>
+            
+            </table>
+            <button class="btn-lg btn-danger" ng-click="isCollapsed =!isCollapsed" style="margin-left: 40%; width: auto; margin-top: 30px;">Zatvori</button>
+
+            </div>
+   </div>
+   </div>
+   </div>
+</div>
+	
+</section>

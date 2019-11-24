@@ -1,0 +1,67 @@
+<section class="section" >
+    <div class="container">
+    
+        <h2 class="text-center title">Lista Knjiga</h2>
+
+            <a class="btn btn-info" style="height: 35px; width: 170px; margin-left: 65%"
+            ui-sref="knjigeNemEdit.info({knjigaId: 0})">
+           <b> Dodaj novu knjigu</b>
+         </a>
+     
+        
+       
+        <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                                <div class="thumbnail">
+                        <table class="table table-bordered" style="table-layout: fixed; width: 100%">
+            
+                        <thead>
+                        <tr>
+
+                            <td><b>Slika</b></td>       
+                            <td><b>Knjiga</b></td>
+                            <td><b>Kod</b></td>
+                            <td><b>Datum izdavanja</b></td>
+                            <td><b>Cena</b></td>
+                            
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="knjiga in vm.knjigeNem">
+                                <td>
+                                        <img ng-src="{{knjiga.knjigaUrl}}"
+                                             style="width:100%;margin:2px"
+                                           > 
+                                    </td>
+                            <td>
+                
+                                    {{knjiga.knjigaIme}}
+                            </td>
+
+                            <td>{{ knjiga.knjigaKod }}</td>
+                            <td>{{ knjiga.datumIzdavanja | date }}</td>
+                            <td>{{ knjiga.cena | currency }}</td>
+                            <td>
+                                <a class="btn btn-info" 
+                                   ui-sref="knjigeNemEdit.info({knjigaId: knjiga.knjigaId})">
+                                   Izmeni
+                                </a>
+                            </td>
+                            <td>
+                                <a class="btn btn-info" 
+                                 ui-sref="knjigaDetalji({knjigaId: knjiga.knjigaId})">
+                                    Detaljno
+                                    </a>
+                            </td>
+                    
+                        </tr>
+
+                        </tbody>
+
+                    </table>
+     
+            </div>
+            </div>
+           </div>
+        </div>
+</section>

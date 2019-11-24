@@ -1,0 +1,209 @@
+<section class="section" >
+        
+        <div class="container" >
+                    
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+<div class="col-sm-10 col-md-offset-1 price-form">
+        <!--ovaj dole false addlisting u ng-iffu da bi se yatvarala pretraga kad ubacujemo proiyvod i obratmo-->
+<div class="row price-form-row" ng-if="!addListing">
+<div class="col-sm-6">
+ <div class="input-group">
+  <span class="input-group-addon">Minimalna cena</span>
+    <select name="minPrice" id="minPrice" ng-model="priceInfo.min" class="form-control">
+        <option value="5">$5</option>
+        <option value="10">$10</option>
+        <option value="20">$20</option>
+        <option value="50">$50</option>
+        <option value="100">$100</option>
+        <option value="200">$200</option>
+        <option value="500">$500</option>
+        <option value="1000">$1000</option>
+        </select>
+        </div>
+        </div>
+
+<div class="col-sm-6">
+   <div class="input-group">
+        <span class="input-group-addon">Maksimalna cena</span>
+           <select name="maxPrice" id="maxPrice" ng-model="priceInfo.max" class="form-control">
+                        <option value="5">$5</option>
+                        <option value="10">$10</option>
+                        <option value="20">$20</option>
+                        <option value="50">$50</option>
+                        <option value="100">$100</option>
+                        <option value="200">$200</option>
+                        <option value="500">$500</option>
+                        <option value="1000">$1000</option>            
+
+</select>
+</div>
+</div>
+</div>
+<button class="btn btn-success" ng-click="addListing = !addListing" ng-show="!addListing">Dodaj Knjigu</button>
+<button class="btn btn-danger" ng-click="addListing = !addListing" ng-show="addListing">Zatvori</button>
+
+<form name="formadodaj" novalidate>
+<div class="listing-form" ng-if="addListing">
+
+        <h3>Dodaj Knjigu</h3>
+
+<div class="row listing-form-row" >
+        <div class="col-sm-4">
+        <div class="input-group">
+        <span class="input-group-addon">Knjiga Ime</span>
+        <input type="text" placeholder="Unesite ime knjige" class="form-control" ng-model="knjiga.knjigaIme" required>
+        </div> 
+ </div>
+
+<div class="col-sm-4">
+        <div class="input-group">
+        <span class="input-group-addon">Cena</span>
+        <input type="text" placeholder="Unesite cenu u formatu XY.XY " class="form-control" ng-model="knjiga.cena" required>
+        </div> 
+ </div>
+
+ <div class="col-sm-4">
+        <div class="input-group">
+        <span class="input-group-addon">Kod</span>
+        <input type="text" placeholder="Unesite kod u formatu ABC-1234" class="form-control" ng-model="knjiga.knjigaKod" required>
+        </div> 
+ </div>
+
+ <!--ovaj dio dole sa divovoima neki se ponavljaju kao npr knjigaIme je kad stisnes detalji te nove pushovane knjige koje addujemo da se sve prikaze-->
+ 
+ <div class="col-sm-4">
+        <div class="input-group">
+        <span class="input-group-addon">Kategorija</span>
+        <input type="text" placeholder="Unesite kategoriju knjige" class="form-control" ng-model="knjiga.kategorija">
+        </div> 
+ </div>
+ <div class="col-sm-4">
+        <div class="input-group">
+        <span class="input-group-addon">Datum Izdavanja</span>
+        <input type="text" placeholder="Mesec broj(dan), godina" class="form-control" ng-model="knjiga.datumIzdavanja" required>
+        </div> 
+ </div>
+ <div class="col-sm-4">
+        <div class="input-group">
+        <span class="input-group-addon">Tagovi</span>
+        <input type="text" placeholder="Unesite tagove" class="form-control" ng-model="knjiga.tagovi">
+        </div> 
+ </div>
+ 
+
+</div>
+
+
+<button class="btn btn-success listing-button" ng-click="dodajKnjigu(knjiga)" ng-show="addListing" >Dodaj knjigu</button>
+<pre>{{knjiga | json}}</pre>
+</div>
+</form>
+<form name="izmenaForma" novalidate>
+<div class="listing-form" ng-if="editListing === true" >
+<h3>Izmeni knjigu</h3>
+
+<div class="row listing-form-row" >
+        <div class="col-sm-4">
+         <div class="input-group">
+                <span class="input-group-addon">Knjiga Ime</span>
+                <input type="text" id="fokusid" placeholder="Unesite ime knjige" class="form-control" ng-model="postojecaKnjiga.knjigaIme" required>
+                </div>
+        </div>
+
+
+  <div class="col-sm-4">
+         <div class="input-group">
+          <span class="input-group-addon">Cena</span>
+                  <input type="text" placeholder="Unesite cenu u formatu XY.XY" class="form-control" ng-model="postojecaKnjiga.cena" required>
+                </div>
+        </div>
+                
+ <div class="col-sm-4">
+          <div class="input-group">
+                 <span class="input-group-addon">Kod</span>
+                        <input type="text" placeholder="Unesite kod u formatu ABC-1234" class="form-control"
+                                         ng-model="postojecaKnjiga.knjigaKod">
+                 </div>
+        </div>
+  <div class="col-sm-4">
+        <div class="input-group">
+                <span class="input-group-addon">Kategorija</span>
+                <input type="text" placeholder="Unesite kategoriju knjige" class="form-control" ng-model="postojecaKnjiga.kategorija">
+                        </div> 
+                 </div>
+ <div class="col-sm-4">
+ <div class="input-group">
+          <span class="input-group-addon">Datum Izdavanja</span>
+          <input type="text" placeholder="Mesec broj(dan), godina" class="form-control" ng-model="postojecaKnjiga.datumIzdavanja">
+                        </div> 
+                 </div>
+ <div class="col-sm-4">
+  <div class="input-group">
+         <span class="input-group-addon">Tagovi</span>
+                 <input type="text" placeholder="Unesite tagove" class="form-control" ng-model="postojecaKnjiga.tagovi">
+                        </div> 
+                 </div>
+
+
+ <button class="btn btn-success listing-button" ng-click="sacuvajEditKnjigu()" ng-show="editListing">Sacuvaj knjigu</button>
+ <button class="btn btn-danger listing-button" ng-click="izbrisiPostojecuKnjigu(postojecaKnjiga)" ng-show="editListing">Izbrisi knjigu</button>
+      
+
+</div>
+</div>
+       </form>
+</div>
+
+                <h2 class="text-center title">Lista Knjiga</h2>
+
+<div class="container">
+  <div class="col-sm-4" ng-repeat="knjiga in knjige | knjigeEngFilter:priceInfo | orderBy: 'knjigaId'" style="margin-bottom: 20px">
+  <div class="thumbnail" style="height: 320px;">        
+   <img ng-src="{{knjiga.knjigaUrl}}"
+                style="width:120px;margin:auto; padding-bottom: 15px;" >
+              
+<div ng-hide="showDetails === true">
+<h3><i class="	glyphicon glyphicon-book"></i> {{knjiga.knjigaIme}}</h3>
+<h4><i class="glyphicon glyphicon-price"></i> {{ knjiga.cena | currency }}
+<span class="label label-primary label-sm">{{ knjiga.knjigaKod }}</span>
+        </h4>
+        </div>
+
+<button class="btn btn-sm btn-success"
+        ng-hide="showDetails === true"
+        ng-click="showDetails = !showDetails"
+> Prikazi detalje
+</button>
+
+<button class="btn btn-sm btn-success"
+        ng-show="showDetails === true"
+        ng-click="editKnjiga(knjiga)"> Izmeni knjigu
+</button>
+
+<button class="btn btn-info btn-sm"
+        ng-show="showDetails === true"
+        ng-click="Close(); showDetails =!showDetails"> Close
+       
+ </button>
+
+<div class="details" ng-show="showDetails === true">
+
+<span class="label">Ime knjige:{{knjiga.knjigaIme}}</span>
+<span class="label">Kategorija:{{knjiga.kategorija}}</span>
+<span class="label">Datum Izdavanja:{{knjiga.datumIzdavanja}}</span>
+<span class="label">Tagovi:{{knjiga.tagovi}}</span>
+<span class="label">Cena:{{knjiga.cena | currency}}</span>
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</section>

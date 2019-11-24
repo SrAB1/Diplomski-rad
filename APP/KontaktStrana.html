@@ -1,0 +1,58 @@
+<section class="section">
+  <h2 class="text-center title">Kontaktirajte nas</h2>
+  <div class="container">
+
+          <form class="form-vertical" style="margin-left: 130px;" name="kontaktForm" novalidate>
+      <div class="form-group" ng-class="{'has-error':kontaktForm.fname.$invalid && kontaktForm.fname.$dirty}">
+        <label class="control-label" for="fname">Vase ime* </label>
+        <input class="form-control" type="text" id="fname" name="fname" placeholder="(ime)obavezan unos"
+          ng-model="fname" required ng-minlength="4" ng-maxlength="12" />
+      </div>
+      <span class="help-block has-error" style="color: red">
+        <span ng-show="kontaktForm.fname.$error.required"> Neophodno je uneti Vase ime</span>
+        <span ng-show="kontaktForm.fname.$error.minlength"> Vase ime mora imati makar 4 slova</span>
+        <span ng-show="kontaktForm.fname.$error.maxlength"> Vase ime moze imati najvise 12 slova</span>
+      </span>
+
+      <div class="form-group" ng-class="{'has-error':kontaktForm.lname.$invalid && kontaktForm.lname.$dirty}">
+        <label class="control-label" for="lname">Vase prezime* </label>
+        <input class="form-control" type="text" id="lname" name="lname" placeholder="(prezime)obavezan unos"
+          ng-model="lname" required />
+      </div>
+      <span class="help-block has-error" style="color: red">
+        <span ng-show="kontaktForm.lname.$error.required"> Neophodno je uneti Vase prezime</span>
+        <span ng-show="kontaktForm.lname.$error.minlength"> Vase prezime mora imati makar 4 slova</span>
+        <span ng-show="kontaktForm.lname.$error.maxlength"> Vase prezime moze imati najvise 12 slova</span>
+      </span>
+
+      <div class="form-group">
+        <label class="control-label" for="email">Vasa E-mail adresa</label>
+        <input class="form-control" type="email" id="email" name="email" placeholder="(email)obavezan unos"
+          ng-model="email" />
+      </div>
+      <div ng-messages="kontaktForm.email.$error" style="color:red">
+        <div ng-message="email">Vasa email adresa je nevazeca! Mora biti oblika ime@nesto.nesto</div>
+      </div>
+
+      <div class="form-group">
+        <label for="kontakt">Tekst upita</label>
+        <textarea class="form-control" id="kontakt" name="kontakt" ng-model="kontakt" required></textarea>
+      </div>
+      
+      <div class="text-center">
+      <button class="btn btn-info center-inline" style="width:130px;" ng-click="getvalues()"> Posalji </button>
+      <button class="btn btn-info center-inline" style="width:130px; " ng-click="reset()"> Ponisti </button>
+  </form>
+    </form>
+
+ 
+  <br />
+  <br />
+
+  <ul class="list-inline list-social" >
+    <li><a href="https://twitter.com/" class="btn btn-link"><i class="fa fa-twitter fa-fw"></i> Twitter</a></li>
+    <li><a href="https://github.com/" class="btn btn-link"><i class="fa fa-github fa-fw"></i> Github</a></li>
+    <li><a href="https://rs.linkedin.com/" class="btn btn-link"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a></li>
+  </ul>
+  </div>
+</section>

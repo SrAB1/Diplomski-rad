@@ -1,0 +1,112 @@
+<section class="section" >
+    <div class="container">
+
+
+            <h2 class="text-center title">{{vm.title}}</h2>
+        
+            <div class="row">
+                
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-6" >
+                                <div class="row">
+                                    <div class="col-md-2"><b>Ime:</b></div>
+                                    <div class="col-md-6">{{vm.knjiga.knjigaIme}}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2"><b>Kod:</b></div>
+                                    <div class="col-md-6">{{vm.knjiga.knjigaKod }}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2"><b>Opis:</b></div>
+                                    <div class="col-md-6">{{vm.knjiga.opis }}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2"><b>Datum Izdavanja:</b></div>
+                                    <div class="col-md-6">{{vm.knjiga.datumIzdavanja|date }}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2"><b>Cena:</b></div>
+                                    <div class="col-md-6">{{vm.knjiga.cena|currency }}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2"><b>Katergorija:</b></div>
+                                    <div class="col-md-6">{{vm.knjiga.kategorija }}</div>
+                                </div>
+                              
+                            </div>
+                
+                            <div class="col-md-6">
+                                <img class="center-block img-responsive"
+                                     style="width:200px; margin: 2px;"
+                                     ng-src="{{vm.knjiga.knjigaUrl}}"
+                                     title="{{vm.knjiga.knjigaName}}">
+                            </div>
+
+                            <div class="row">
+                                <ul>
+                                <h3> <strong>Utisci i rejting korisnika: <strong></h3>
+                                <li ng-repeat="utisak in vm.knjiga.utisci">
+                            
+                                  <blockquote>
+                                    <strong>{{utisak.stars}} Stars</strong>
+                                    {{utisak.body}}
+                                    <cite class="clearfix">—{{utisak.author}}  on {{utisak.createdOn | date}}</cite>
+                                  </blockquote>
+                                </li>
+                              </ul>
+                              </div>
+                        </div>
+                    </div>
+                
+                        <a class="btn btn-info"
+                           ui-sref="knjigeNem" 
+                           style="width:80px">
+                            
+                           <b> Back</b>
+                            </a>
+
+
+
+
+                    
+                </div>
+                
+<!--  Utisak Form -->
+  <form name="utisakForm" style="width: 800px; margin-left: auto; margin-right: auto; background: transparent" role="form" ng-submit="vm.knjiga.utisci.addUtisak(utisak)">
+ <!--  Live utisak -->
+ <blockquote ng-show="vm.utisak">
+  <strong>{{vm.utisak.stars}} Stars</strong>
+  {{vm.utisak.body}}
+  <cite class="clearfix">—{{vm.utisak.author}}</cite>
+</blockquote>
+
+
+
+
+    <!--  utisak Form -->
+    <h2 style="text-align: center">Dodaj utisak:</h2>
+    
+    <fieldset class="form-group">
+      <select ng-model="vm.utisak.stars" class="form-control" ng-options="stars for stars in [5,4,3,2,1]" title="Stars" required>
+        <option value="">Dajte rejting</option>
+      </select>
+    </fieldset>
+    <fieldset class="form-group">
+      <textarea ng-model="vm.utisak.body" class="form-control" placeholder="Napišite kratak utisak o ovoj knjizi..." title="utisak" required></textarea>
+    </fieldset>
+    <fieldset class="form-group">
+      <input ng-model="vm.utisak.author" type="email" class="form-control" placeholder="nekoIme@emailServis.com" title="Email" required />
+    </fieldset>
+    <fieldset class="form-group">
+      <input type="submit" class="btn btn-info center-block" style="margin-left:40%" value="Dodaj utisak" ng-disabled="utisakForm.$invalid"/>
+    </fieldset>
+  </form>
+  </form>
+
+</div>
+
+
+
+ </div>
+ </section>       
