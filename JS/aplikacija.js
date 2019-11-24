@@ -414,7 +414,7 @@ else{
                 "kategorija": "Napredni",
                 "trajanje": "12 mjeseci",
                 "cena": 860,
-                "imgUrl": "/Diplomski-rad/IMAGES/slike-kursevi-diplomski/CPE.jpg"
+                "imgUrl": "/Diplomski-rad/IMAGES/slike-kursevi-diplomski/CPE.jpeg"
 
             },
             {
