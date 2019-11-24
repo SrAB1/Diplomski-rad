@@ -90,7 +90,7 @@
         "cena": 400.50,
         "kategorija": "Engleski jezik",
         "tagovi": "Opste, Starter, knjiga za ucenike",
-        "knjigaUrl": "Diplomski-rad/IMAGES/KNJIGE/Cambridge_Global_English_Learners_Book_1_.jpg"
+        "knjigaUrl": "/Diplomski-rad/IMAGES/KNJIGE/Cambridge_Global_English_Learners_Book_1_.jpg"
     },
     {
         "knjigaId": 10,
@@ -100,7 +100,7 @@
         "cena": 124.95,
         "kategorija": "Engleski jezik",
         "tagovi": "Pocetni, knjiga za djecu",
-        "knjigaUrl": "/IMAGES/KNJIGE/Cambridge-storyfun-2nd-edition.jpg"
+        "knjigaUrl": "/Diplomski-rad/IMAGES/KNJIGE/Cambridge-storyfun-2nd-edition.jpg"
     },
     {
         "knjigaId": 11,
@@ -110,7 +110,7 @@
         "cena": 462.95,
         "kategorija": "Engleski jezik",
         "tagovi": "Napredni, 10 testova, testovi",
-        "knjigaUrl": "/IMAGES/KNJIGE/cep_pract_tests.jpg"
+        "knjigaUrl": "/Diplomski-rad/IMAGES/KNJIGE/cep_pract_tests.jpg"
     },
     {
         "knjigaId": 12,
@@ -120,7 +120,7 @@
         "cena": 127.95,
         "kategorija": "Engleski jezik",
         "tagovi": "Srednji, gramatika",
-        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/cpe_common_mistake.jpg"
+        "knjigaUrl": "/Diplomski-rad/IMAGES/KNJIGE/cpe_common_mistake.jpg"
     },
     {
         "knjigaId": 13,
@@ -130,7 +130,7 @@
         "cena": 234,
         "kategorija": "Engleski jezik",
         "tagovi": "Napredni, Srednji, testovi",
-        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Certificate in Advanced English 5.jpg"
+        "knjigaUrl": "/Diplomski-rad/IMAGES/KNJIGE/Certificate in Advanced English 5.jpg"
     },
     {
         "knjigaId": 14,
@@ -140,7 +140,7 @@
         "cena": 333.23,
         "kategorija": "Engleski jezik",
         "tagovi": "Naprednji, knjiga za ucenike",
-        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/CPE.jpg"
+        "knjigaUrl": "/Diplomski-rad/IMAGES/KNJIGE/CPE.jpg"
     },
     {
         "knjigaId": 15,
@@ -150,7 +150,7 @@
         "cena": 600,
         "kategorija": "Engleski jezik",
         "tagovi": "za skole, pocetni",
-        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Preliminary English Test for schools 1.jpg"
+        "knjigaUrl": "/Diplomski-rad/IMAGES/KNJIGE/Preliminary English Test for schools 1.jpg"
     }
 
 
