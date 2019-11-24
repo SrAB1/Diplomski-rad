@@ -17,7 +17,7 @@
                 "cena": 24.45,
                 "kategorija": "Nemacki jezik",
                 "tagovi": ["A1", "pocetni nivo"],
-                "knjigaUrl":"http://localhost/Diplomski-rad/IMAGES/knjigeNem/Schritte1.jpg",
+                "knjigaUrl":"/Diplomski-rad/IMAGES/knjigeNem/Schritte1.jpg",
                 "utisci": [{
                     "stars": 5,
                     "body": "Odlicna knjiga!!",
@@ -41,7 +41,7 @@
                 "cena": 56.98,
                 "kategorija": "Nemacki jezik",
                 "tagovi": ["A1", "A2"],
-                "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/knjigeNem/Schritte2.jpg",
+                "knjigaUrl": "/Diplomski-rad/IMAGES/knjigeNem/Schritte2.jpg",
                 "utisci": [{
                     "stars": 2,
                     "body": "Knjiga je solidna ali ne i dobra..",
@@ -64,7 +64,7 @@
             "cena": 87.96,
             "kategorija": "Nemacki jezik",
             "tagovi": ["A2", "srednji nivo"],
-            "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/knjigeNem/Schritte3.jpg",
+            "knjigaUrl": "/Diplomski-rad/IMAGES/knjigeNem/Schritte3.jpg",
             "utisci": [{
                 "stars": 3,
                 "body": "Dobra knjiga!",
@@ -86,7 +86,7 @@
             "cena": 192.95,
             "kategorija": "Nemacki jezik",
             "tagovi": ["A2", "B1"],
-            "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/knjigeNem/SchritteInternational4.jpg",
+            "knjigaUrl": "/Diplomski-rad/IMAGES/knjigeNem/SchritteInternational4.jpg",
             "utisci": [{
                 "stars": 5,
                 "body": "Knjiga za svaku preporuku!",
@@ -108,7 +108,7 @@
             "cena": 78.95,
             "kategorija": "Nemacki jezik",
             "tagovi": ["B2", "C1"],
-            "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/knjigeNem/SchrittePlus2.jpg",
+            "knjigaUrl": "/Diplomski-rad/IMAGES/knjigeNem/SchrittePlus2.jpg",
             "utisci": [{
                 "stars": 2,
                 "body": "Jedva prolazna ocijena za ovu knjigu!",
@@ -134,7 +134,7 @@
                     function getData() {
 
                 var request = new XMLHttpRequest();
-                request.open('GET', 'http://localhost/Diplomski-rad/knjige.json', true);
+                request.open('GET', '/Diplomski-rad/knjige.json', true);
                 request.send(null);
                 request.async = true;
 
