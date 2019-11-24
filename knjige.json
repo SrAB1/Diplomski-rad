@@ -6,7 +6,7 @@
         "cena": 45.45,
         "kategorija": " jezik",
         "tagovi": "CAE, testovi",
-        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Advanced1.jpg"
+        "knjigaUrl": "/Diplomski-rad/IMAGES/KNJIGE/Advanced1.jpg"
 
 
     },
@@ -19,7 +19,7 @@
         "cena": 25.55,
         "kategorija": "Engleski jezik",
         "tagovi": "CAE, testovi sa odgovorima",
-        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Advanced3.jpg"
+        "knjigaUrl": "/Diplomski-rad/IMAGES/KNJIGE/Advanced3.jpg"
 
     },
     {
@@ -30,7 +30,7 @@
         "cena": 104.55,
         "kategorija": " jezik",
         "tagovi": "CAE, gramatika, knjiga za ucenje",
-        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Advanced-Grammar-in-Use.jpg"
+        "knjigaUrl": "/Diplomski-rad/IMAGES/KNJIGE/Advanced-Grammar-in-Use.jpg"
     },
     {
         "knjigaId": 4,
@@ -40,7 +40,7 @@
         "cena": 12.95,
         "kategorija": "Engleski jezik",
         "tagovi": "CAE, knjiga za profesore ",
-        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/CAE 5(Teacher's book).jpg"
+        "knjigaUrl": "/Diplomski-rad/IMAGES/KNJIGE/CAE 5(Teacher's book).jpg"
     },
     {
         "knjigaId": 5,
@@ -50,7 +50,7 @@
         "cena": 600,
         "kategorija": "Engleski jezik",
         "tagovi": "Starter, knjiga bez odgovora",
-        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Cambridge English First 2.jpg"
+        "knjigaUrl": "/Diplomski-rad/IMAGES/KNJIGE/Cambridge English First 2.jpg"
     },
     {
         "knjigaId": 6,
@@ -60,7 +60,7 @@
         "cena": 70,
         "kategorija": "Engleski jezik",
         "tagovi": "Starter, knjiga za ucenike",
-        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Cambridge English Proficiency 1.jpg"
+        "knjigaUrl": "/Diplomski-rad/IMAGES/KNJIGE/Cambridge English Proficiency 1.jpg"
     },
     {
         "knjigaId": 7,
@@ -70,7 +70,7 @@
         "cena": 222,
         "kategorija": "Engleski jezik",
         "tagovi": "Starter, testovi",
-        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Cambridge English Proficiency 2.jpg"
+        "knjigaUrl": "/Diplomski-rad/IMAGES/KNJIGE/Cambridge English Proficiency 2.jpg"
     },
     {
         "knjigaId": 8,
@@ -80,7 +80,7 @@
         "cena": 127.95,
         "kategorija": "Engleski jezik",
         "tagovi": "Starter, knjiga za ucenike",
-        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Cambridge English Vocabulary for PET.jpg"
+        "knjigaUrl": "/Diplomski-rad/IMAGES/KNJIGE/Cambridge English Vocabulary for PET.jpg"
     },
     {
         "knjigaId": 9,
@@ -90,7 +90,7 @@
         "cena": 400.50,
         "kategorija": "Engleski jezik",
         "tagovi": "Opste, Starter, knjiga za ucenike",
-        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Cambridge_Global_English_Learners_Book_1_.jpg"
+        "knjigaUrl": "Diplomski-rad/IMAGES/KNJIGE/Cambridge_Global_English_Learners_Book_1_.jpg"
     },
     {
         "knjigaId": 10,
@@ -100,7 +100,7 @@
         "cena": 124.95,
         "kategorija": "Engleski jezik",
         "tagovi": "Pocetni, knjiga za djecu",
-        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/Cambridge-storyfun-2nd-edition.jpg"
+        "knjigaUrl": "/IMAGES/KNJIGE/Cambridge-storyfun-2nd-edition.jpg"
     },
     {
         "knjigaId": 11,
@@ -110,7 +110,7 @@
         "cena": 462.95,
         "kategorija": "Engleski jezik",
         "tagovi": "Napredni, 10 testova, testovi",
-        "knjigaUrl": "http://localhost/Diplomski-rad/IMAGES/KNJIGE/cep_pract_tests.jpg"
+        "knjigaUrl": "/IMAGES/KNJIGE/cep_pract_tests.jpg"
     },
     {
         "knjigaId": 12,
