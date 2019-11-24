@@ -1,0 +1,354 @@
+html {
+	background: 
+	linear-gradient(
+		rgba(85, 78, 78, 0.377),
+		rgba(53, 50, 50, 0.253)
+	),
+	url(../IMAGES/img35.jpg) no-repeat center center fixed; 
+	min-height:100%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+body {
+	background:transparent;
+	min-height:100%; 	
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+	line-height: 1.5em;
+	font-size:16px;
+	font-family: Helvetica, Arial, sans-serif;
+	color:rgb(245, 241, 241);
+	opacity: inherit;
+	font-weight: normal;
+	
+}
+
+
+/*              Navigacijski bar               */
+
+.glavniMeni { z-index: 999999; width:100%;  padding: 30px 0 0 0;}
+@media (min-width: 768px) {
+	.glavniMeni { position: fixed; }
+}
+
+.navbar-toggle {
+	position:relative;
+	float:left;
+	display:block;
+	padding: 9px 10px;
+	background: rgba(255, 255, 255, 0.2);
+	background-image: none;
+	border: 0 none;
+	top:0px; 
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+	outline: 0;
+	opacity: 1;
+	-webkit-transition: all .45s;
+	   -moz-transition: all .45s;
+	        transition: all .45s;
+	        float: left;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 28px;
+  height: 6px;
+  background: rgb(243, 241, 241);
+}
+.navbar-toggle .icon-bar + .icon-bar {
+	margin-top: 4px;
+}
+.open .navbar-toggle { 
+	top:-70px; 
+	opacity: 0;  
+}
+.glavniMeni .dropdown-menu {
+	top: -14em;
+	left: 0px;
+	font-size: 16px;
+	padding:0;
+	background:none;
+	border:0 none;
+	border-radius: 2px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	display:block;
+	opacity:0;
+	-webkit-transition: all .45s;
+	   -moz-transition: all .45s;
+	        transition: all .45s;
+}
+.glavniMeni .dropdown-menu .active { 
+	font-weight:bold;
+}
+.glavniMeni .open .dropdown-menu { 
+	top:2px;
+	opacity:1;
+}
+.glavniMeni .dropdown-menu a { 
+	padding:10px 10px;
+	margin:0;
+	color:rgba(244, 244, 245, 0.712);
+    text-decoration: none;
+    font-weight: bold;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+}
+.glavniMeni .dropdown-menu a:hover { 
+	background:rgba(255,255,255,.1);
+	color:rgba(26, 86, 121, 0.712);
+	padding:10px 8px 10px 12px;
+}
+
+
+
+
+
+/*                Typography                  */
+
+a { color:#fff; text-decoration: none; }
+a:hover, a:active { color:#fff; text-decoration: underline; }
+.lead { 
+	font-weight:normal;
+	font-size:1.5em;
+	line-height:1.2em;
+}
+
+.title,
+.subtitle { 
+	font-family: 'Wire One', Helvetica, Arial, sans-serif;
+	font-weight:normal;
+	font-size:7em;
+	margin-bottom:15px; 
+	color:#FDF9F4; 
+	line-height:1em;
+}
+.subtitle { 
+	line-height:.9em;
+	font-size:5.5em;
+	margin-top:0;
+	margin-bottom:40px; 
+}
+.tagline { 
+	font-size:1.4em;
+	line-height:1.3em;
+	font-weight:normal;
+	margin-bottom:75px;
+}
+
+@media (max-width: 767px) {
+	.lead { 
+		font-size:1.3em;
+	}
+}
+
+
+
+/*               UI - Dugmad                 */
+
+.btn{
+	color:#333;
+	text-shadow: none;
+	text-decoration: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border:0 none;
+}
+.btn:hover {
+	color:#000;
+}
+.btn-lg { 
+	padding:16px 30px;
+	font-size:inherit;
+}
+
+.btn-link {
+	color:rgba(255,255,255,.8);
+}
+.btn-link:hover, .btn-link:focus, .btn-link:active {
+	color:#fff
+}
+.btn-default {
+	background: rgba(255,255,255,.5);
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+	background: rgba(255,255,255,.8);
+}
+.btn-primary {
+	background: rgba(255,255,255,.2);
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active {
+	background: rgba(255,255,255,.5);
+}
+
+
+
+
+/*             UI - Thumbnails                  */
+
+.thumbnail {
+	background-color: rgba(255,255,255,.2);
+	border: 0 none;
+	
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+					border-radius: 2px;
+	font-size: medium;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding-top: 20 px;
+	padding-bottom: 20 px;
+	
+	
+	
+}
+.thumbnail .caption {
+	color: inherit;
+}
+
+
+
+
+/*            Ostale stvari             */
+
+
+.list-social .btn { 
+	font-size:1.3em; 
+}
+.list-social .btn:hover, .list-social .btn:active, .list-social .btn:focus { 
+	text-decoration: none; 
+}
+
+
+/* Dugmad socijalnih mreza u footeru */
+#social { 
+	margin-top:50px;
+	margin-bottom:50px;
+}
+#social .wrapper { 
+	width:340px; 
+	margin:0 auto;
+}
+
+
+
+
+
+/*      Sekcije-univerzalne klase       */
+
+.section { 
+	
+	min-height:420px;
+	width: 100%; 
+	
+	height:100%;
+	padding-top:100px;
+	padding-bottom:50px; 
+
+
+} 
+
+.price-form{
+	margin-bottom: 10px;
+	padding: 15px;
+	background-color: rgba(140, 157, 160, 0.8);
+	border: 2pt solid ;
+
+} 
+
+.price-form-row{
+
+	margin-bottom: 10px;
+}
+
+.listing-form-row, .listing-button{
+
+	margin-top: 10px;
+	margin-left: 2px;
+	
+}
+.listing-form-h3{
+
+	color: white;
+}
+
+.kontakt-form{
+
+	margin-bottom: 10px;
+	padding: 25px;
+	line-height: 1.5em;
+	font-size:20px;
+	
+}
+/*         search forma u kursevima        */
+.my-form{
+	margin-bottom: 10px;
+	padding: 15px;
+	background-color: rgba(140, 157, 160, 0.8);
+	border: 2pt solid ;
+	 
+	
+}
+/*dole sve ispod oko table(prijava kursevi) je podesvanje sirine polja input, textarea i
+select u okviru tabele/forme full 100% plus za razlicite media downsizing*/
+table td input {
+
+	width: 100%;
+	box-sizing: border-box;
+}
+table td textarea {
+
+	width: 100%;
+	box-sizing: border-box;
+}
+table td select {
+
+	width: 50%;
+	box-sizing: border-box;
+}
+/*da se table kolone ne prelaze sirinu parent diva, da ne iskacu iz diva table-lazout-fixed*, ono vasa prijava je kod kurseva*/
+
+/*vjrv ono kod dodavanja knjiga Njemacki, ona tabela i panel*/
+.wizard a {
+	background: #a2dcf7;
+	display: inline-block;
+	margin-right: 5px;
+	min-width: 150px;
+	outline: none;
+	padding: 10px 40px 10px;
+	position: relative;
+	text-decoration: none;
+	
+}
+.wizard .active {
+	background: rgb(186, 217, 238);
+	color: #fff;
+}
+/* za notifikacije toaster u centru gore, stil podesavao */
+
+	.toast-top-center {
+		top: 12px;
+		margin: 0 auto;
+		left: 60%;
+}
+/* za mape razliciti width uredjaja */
+.map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+min-width: inherit;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
