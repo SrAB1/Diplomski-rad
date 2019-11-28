@@ -20,5 +20,5 @@ validations of the contact form, restfull apis, routing with UI Router etc.
 
 This app needs web or local server for normal functioning. 
 Download the .zip file and unzip it in the /www or similar folder within WampServer/XAMPP or similar software(for local environment),
-RENAME the main app folder from "Diplomski-rad-masterr" to "Diplomski-rad" and then run the app. 
+RENAME the main app folder from "Diplomski-rad-master" to "Diplomski-rad" and then run the app. 
 Everything should work properly. 
