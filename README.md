@@ -2,7 +2,8 @@
 
 AngularJS Application for Cambridge Centre Learning School of Foreign Languages.
 This web app served as my Bachelor thesis.
-Developed using courses from Udemy, PluralSight, CodeSchools and other tutorials and books-
+Developed using courses from Udemy, PluralSight, CodeSchools and other tutorials and books.
+Project folder structure and few of it's features are similar to those presented in course AngularJS Line of Business Application by Deborah Kurata, which can be found here(https://www.pluralsight.com/courses/angularjs-line-of-business-applications) while some of the design principles(CSS, jQuery) were done similarly, transformed and build upon to those of Magister - Free Bootstrap Template under Creative Commons Attributions License. Template can be found here(https://www.gettemplate.com/info/magister/).
 
 # How does it work? What does it do?
 
