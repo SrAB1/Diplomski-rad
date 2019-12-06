@@ -6,6 +6,7 @@ html {
 	),
 	url(../IMAGES/img35.jpg) no-repeat center center fixed; 
 	min-height:100%;
+	min-width:100%;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 	     -o-background-size: cover;
@@ -295,8 +296,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	 
 	
 }
-/*dole sve ispod oko table(prijava kursevi) je podesvanje sirine polja input, textarea i
-select u okviru tabele/forme full 100% plus za razlicite media downsizing*/
+
 table td input {
 
 	width: 100%;
@@ -312,9 +312,8 @@ table td select {
 	width: 50%;
 	box-sizing: border-box;
 }
-/*da se table kolone ne prelaze sirinu parent diva, da ne iskacu iz diva table-lazout-fixed*, ono vasa prijava je kod kurseva*/
+/*da se table kolone ne prelaze sirinu parent diva, da ne iskacu iz diva table-lazout-fixed*/
 
-/*vjrv ono kod dodavanja knjiga Njemacki, ona tabela i panel*/
 .wizard a {
 	background: #a2dcf7;
 	display: inline-block;
@@ -330,7 +329,7 @@ table td select {
 	background: rgb(186, 217, 238);
 	color: #fff;
 }
-/* za notifikacije toaster u centru gore, stil podesavao */
+
 
 	.toast-top-center {
 		top: 12px;
